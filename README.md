@@ -26,7 +26,7 @@ Mobile screenshot:
 ### Project Link
 
 Below is the link to the project's live URL on GitHub Pages.
-
+https://sercanbrack.github.io/module-two-challenge/
 
 ### Author
 
