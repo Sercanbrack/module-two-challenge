@@ -1,23 +1,27 @@
+/*Creates the color variables I used throughout*/
 :root {
     --dark-color: #223340;
     --medium-color: #3280BB;
     --light-color: #D8E8ED;
     --white: #fff;
 }
+/*Sets scrolling behavior*/
 html {
     scroll-behavior: smooth;
 }
+/*Sets background color*/
 body {
     background-color: #D8E8ED;
 }
+/*Sets the style for the text in the nav links*/
 a {
     color: var(--light-color);
     text-decoration: inherit;
 }
+/*Styles the header and makes it a flex box*/
 header {
     display: flex;
     flex-wrap: wrap;
-    flex-shrink: 0;
     justify-content: space-between;
     background-color: var(--medium-color);
     margin: 0;
@@ -33,6 +37,7 @@ h1 {
     padding-bottom: 15px;
     padding-top: 10px;
 }
+/*Sets styling for h2*/
 h2 {
     font-size: 32px;
     border-bottom: 10px solid var(--medium-color);
@@ -45,56 +50,76 @@ h2 {
     display: flex;
     margin: 10px;
     padding: 10px;
-    gap: 25px;
+    gap: 10px;
     list-style: none;
     justify-content: flex-end;
 }
+/*Sets styling for the text in the nav links*/
 .nav-links li {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
     color: var(--light-color);
     margin: 10px;
 }
+/*Creates a flex box in the about me section*/
 #about-me {
     display: flex;
-    flex-wrap: wrap;
+    flex-basis: 100%;
     gap: 20px;
     max-width: 100%
 }
+/*Sets size and styling for the selfie image*/
 .selfie {
-    min-height: 32%;
+    min-height: 50px;
+    height: 32%;
     max-width: 32%;
     border: 5px solid var(--dark-color);
+    margin-top: 10px;
 }
+/*Sets the styling for the paragraph text in the about me section*/
 .about-me-text p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     flex-wrap: wrap;
+    max-width: 80%;
+    line-height: 1.5;
 }
+/*Creates a flex box containing all the placeholder images*/
 .placeholder-images {
     display: flex;
+    flex-basis: 100%;
     flex-wrap: wrap;
     margin: 0 auto;
     font-size: 0;
 }
+/*Sets the styling and size of the featured project placeholder*/
 .featured-project {
     background-color: var(--dark-color);
-    width: 60%;
-    min-width: 750px;
+    flex-basis: 100%;
     height: 500px;
     color: var(--white);
     font-size: 20px;
     margin: 10px;
 }
+/*Creates a flex box with the 4 non-featured projects*/
 aside {
     display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: right;
+    justify-content: space-between;
 }
+/*Styles the non-featured projects*/
 aside section {
     background-color: var(--dark-color);
+    position: relative;
     height: 250px;
-    width: 250px;
-    margin: 10px
+    width: 100%;
+    margin: 10px;
+    
 }
+/*Styles the text inside the non-featured project boxes*/
 aside section p {
     color: var(--white);
     font-size: 20px;
@@ -102,18 +127,53 @@ aside section p {
     left: 10px;
     top: 180px; 
 }
-
+/*Creates a flex box in the contact-info-list section*/
 .contact-info-list {
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    font-size: 18px;
+    line-height: 2;
 }
+/*Styles the links in the contact info list*/
 .contact-info-list a {
     color: var(--dark-color);
+    text-decoration: underline var(--dark-color);
 }
-
+/*Creates a flex box containing the footer*/
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: .5;
+}
+@media (max-width: 1100px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links {
+        gap: 75px;
+    }
+}
+@media (max-width: 768px){
+    #about-me {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .selfie {
+        min-width: 50%;
+    }
+    .about-me-text p {
+        text-align: center;
+        margin-left: 50px;
+    }
+   
+    .contact-info-list {
+       align-items: center;
+       margin: 0 auto;
+       padding: 0;
+       gap: 0;
+   }
 }
