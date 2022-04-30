@@ -30,6 +30,9 @@ h1 {
     padding-bottom: 15px;
     padding-top: 10px;
 }
+h2 {
+    font-size: 32px;
+}
 /*Sets styling for the navigation links*/
 .nav-links {
     display: flex;
@@ -51,10 +54,29 @@ h1 {
     gap: 20px;
 }
 .selfie {
-    min-height: 30%;
-    max-width: 30%;
+    min-height: 32%;
+    max-width: 32%;
     border: 5px solid var(--dark-color);
 }
 .about-me-text {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.placeholder-images {
+    display: flex;
+}
+.featured-project {
+    background-color: var(--dark-color);
+    width: 60%;
+    height: 500px;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.contact-info-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.contact-info-list a {
+    color: var(--dark-color);
 }
