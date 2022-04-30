@@ -20,8 +20,8 @@ Everything should come preconfigured and work as intended.
 ### Image Links
 
 Below are links to screenshots of the completed webpage.
-Desktop screenshot: 
-Mobile screenshot:
+Desktop screenshot: https://github.com/Sercanbrack/module-two-challenge/blob/main/assets/images/desktop-screenshot.jpeg?raw=true
+Mobile screenshot: https://github.com/Sercanbrack/module-two-challenge/blob/main/assets/images/mobile-screenshot.jpeg?raw=true
 
 ### Project Link
 
