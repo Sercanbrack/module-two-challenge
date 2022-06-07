@@ -95,6 +95,7 @@ h2 {
 /*Sets the styling and size of the featured project placeholder*/
 .featured-project {
     background-color: var(--dark-color);
+    background-image: url("images/medtrackerimage.PNG");
     flex-basis: 100%;
     height: 500px;
     color: var(--white);
